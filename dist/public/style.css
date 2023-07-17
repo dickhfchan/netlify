@@ -1,0 +1,340 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Udemy Sans", "SF Pro Text", -apple-system, BlinkMacSystemFont,
+    Roboto, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 400;
+  line-height: 1.4;
+  font-size: 1.6rem;
+  color: #1c1d1f;
+  margin: 0;
+}
+
+.top-container {
+  background-color: #a435ef;
+  padding-bottom: 32px;
+  padding-top: 32px;
+  height: auto;
+  width: 100%;
+}
+
+.inner-position-container {
+  padding-left: 2cm;
+  max-width: 1184px;
+  margin: 0 auto;
+  color: white;
+  /* margin-bottom: 0.8rem; */
+}
+
+.ud-heading-xl {
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 0.8rem;
+}
+
+.ud-text-md {
+  font-size: 20px;
+  font-weight: 400;
+  max-width: 700px;
+  line-height: 1.4;
+  margin-bottom: 0.8rem;
+}
+
+.ud-text-sm {
+  color: white;
+  border-color: #fff;
+  font-weight: 400;
+  line-height: 1.4;
+  font-size: 16px;
+}
+
+.ud-text-sm span {
+  /* color: #cec0fc; */
+  color: lightpink;
+  font-size: 20px;
+  /* text-shadow: #d1d7dc 0 1px 0; */
+}
+
+.clp-lead {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.clp-lead__element-item {
+  margin-top: 0.8rem;
+  margin-bottom: 0.8rem;
+  margin-right: 4.6rem;
+  font-weight: 400;
+  line-height: 1.4;
+  font-size: 16px;
+}
+
+.clp-lead__element-item span {
+  margin-right: 0.6rem;
+}
+
+.material-symbols-outlined {
+  display: inline-flex;
+  vertical-align: top;
+}
+
+.action-container {
+  width: 95%;
+  height: 800px;
+  /* border: #1c1d1f solid 1px; */
+  position: fixed;
+}
+
+.action-panel {
+  width: 200px;
+  height: 100px;
+  background-color: lightcoral;
+  float: right;
+  text-align: center;
+  margin: auto;
+}
+
+.action-panel p {
+  padding: 20px 0;
+  font-size: 30px;
+  color: white;
+}
+
+/* #notification_important {
+  width: 24px;
+  height: 24px;
+} */
+
+.paid-course-landing-page__body {
+  padding: 0;
+  padding-left: 50px;
+  max-width: 1184px;
+  height: 100vh;
+  background-color: white;
+  margin: 0 auto;
+  color: #1c1d1f;
+  margin-bottom: 0.8rem;
+}
+
+.what-you-will-learn {
+  margin-top: 3.2rem;
+  margin-bottom: 3.2rem;
+  margin-left: 20px;
+  border: 1px solid #d1d7dc;
+  padding: 20px;
+  padding-right: 40px;
+  width: 730px;
+  height: auto;
+}
+
+.what-you-will-learn--title {
+  margin: 0 2.4rem 1.6rem;
+  font-family: "Udemy Sans", -apple-system, BlinkMacSystemFont, Roboto,
+    "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.02rem;
+  font-size: 24px;
+  max-width: 36em;
+}
+
+.learn-objectives {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.ud-block-list-item {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  height: auto;
+  text-align: left;
+  letter-spacing: normal;
+  white-space: normal;
+  padding: 0.4rem 0;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+ul {
+  list-style: none;
+  gap: 1px;
+}
+
+li {
+  display: list-item;
+  width: 310px;
+  margin: 3px;
+}
+
+/* .ud-block-list-item span {
+  margin: 10px;
+} */
+
+.ud-block-list-item-content {
+  min-width: 1px;
+  line-height: 16px;
+  margin-left: 15px;
+}
+
+.what-you-will-learn--objective-item {
+  font-size: 14px;
+}
+
+.style-description {
+  font-family: "Udemy Sans", -apple-system, BlinkMacSystemFont, Roboto,
+    "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol";
+  margin-top: 3.2rem;
+  margin-bottom: 3.2rem;
+  margin-left: 20px;
+  padding: 20px;
+  padding-right: 40px;
+  width: 730px;
+  height: auto;
+}
+
+.description-heading {
+  margin: 0 0 1.6rem;
+  font-family: "Udemy Sans", -apple-system, BlinkMacSystemFont, Roboto,
+    "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.02rem;
+  font-size: 24px;
+  max-width: 36em;
+}
+
+p {
+  font-size: inherit;
+  font-weight: 400;
+  max-width: 60rem;
+  line-height: 1.8;
+  font-size: 16px;
+}
+
+.style-profile {
+  margin-top: 3.2rem;
+  /* margin-bottom: 7.2rem; */
+  margin-left: 20px;
+  padding: 20px;
+  padding-right: 20px;
+  background-color: #cec0fc;
+  border-radius: 3px;
+  width: 410px;
+  height: auto;
+  display: inline-block;
+  color: #71717a;
+  font-size: 14px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08), 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.style-profile span {
+  color: white;
+  text-shadow: #d1d7dc 0 1px 0;
+  font-size: 18px;
+}
+
+.style-profile div {
+  margin-bottom: 10px;
+}
+
+.footer {
+  display: none;
+}
+
+@media only screen and (max-width: 1184px) {
+  .top-container {
+    /* background-color: black; */
+    width: 100%;
+  }
+  .action-container {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .top-container {
+    /* background-color: blacks; */
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .top-container {
+    /* background-color: black; */
+    width: 100%;
+  }
+
+  .inner-position-container {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .paid-course-landing-page__body {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .what-you-will-learn {
+    width: 100%;
+    padding: 20px;
+    margin-left: 2px;
+  }
+
+  li {
+    width: 100vh;
+    margin-right: 20px;
+  }
+
+  .style-description {
+    width: 100%;
+    padding: 2px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 10 px;
+  }
+
+  .style-img-profile {
+    /* margin: px; */
+  }
+
+  .style-profile {
+    /* width: 100%; */
+    max-width: 300px;
+    margin-right: 5px;
+    display: none;
+  }
+
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background-color: lightcoral;
+    color: white;
+    text-align: center;
+
+    display: block;
+  }
+
+  .footer p {
+    font-size: 20px;
+    color: white;
+  }
+
+  .action-container {
+    display: none;
+  }
+}
