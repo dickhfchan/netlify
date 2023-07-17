@@ -1,7 +1,7 @@
 const express = require("express");
 const serverless = require("serverless-http");
 
-// var bodyParser = require("body-parser");
+const bodyParser = require("body-parser");
 
 // app.use(bodyParser.urlencoded({ extended: false }));
 // app.use(bodyParser.json());
@@ -20,6 +20,24 @@ router.get("/", (req, res) => {
 });
 
 router.post("/form", function (req, res) {
+  // var cuurent_date = new Date();
+  // cuurent_date = new Date().toISOString().slice(0, 19).replace("T", " ");
+
+  // require("dotenv").config();
+  // const mysql = require("mysql2");
+  // const connection = mysql.createConnection(process.env.DATABASE_URL);
+  // console.log(process.env.DATABASE_URL);
+  // console.log("Connected to PlanetScale!");
+  // connection.connect(function (err) {
+  //   if (err) throw err;
+  //   console.log("Connected!");
+  //   var sql = `insert into registration_ta (name, email, mobile, datetime) values ('${req.body.name}', '${req.body.email}', '${req.body.mobile}', '${cuurent_date}')`;
+  //   connection.query(sql, function (err, result) {
+  //     if (err) throw err;
+  //     console.log("1 record inserted");
+  //   });
+  // });
+
   res.send("Hello World!");
   // console.log(req.body);
 
@@ -28,6 +46,7 @@ router.post("/form", function (req, res) {
 
 // Use the router to handle requests to the `/.netlify/functions/api` path
 app.use(`/.netlify/functions/api`, router);
+app.use(bodyParser.urlencoded({ extended: true }));
 
 // Export the app and the serverless function
 module.exports = app;
