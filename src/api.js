@@ -38,10 +38,10 @@ router.post("/form", function (req, res) {
   //   });
   // });
 
-  res.send("Hello World!");
+  // res.send("Hello World!");
   // console.log(req.body);
 
-  //   // res.send(req.body);
+  res.send(req.body);
 });
 
 // Use the router to handle requests to the `/.netlify/functions/api` path
