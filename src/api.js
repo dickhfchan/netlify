@@ -17,23 +17,23 @@ router.get("/", (req, res) => {
 });
 
 router.post("/form", function (req, res) {
-  var cuurent_date = new Date();
-  cuurent_date = new Date().toISOString().slice(0, 19).replace("T", " ");
+  // var cuurent_date = new Date();
+  // cuurent_date = new Date().toISOString().slice(0, 19).replace("T", " ");
 
-  require("dotenv").config();
-  const mysql = require("mysql2");
-  const connection = mysql.createConnection(process.env.DATABASE_URL);
-  console.log(process.env.DATABASE_URL);
-  console.log("Connected to PlanetScale!");
-  connection.connect(function (err) {
-    if (err) throw err;
-    console.log("Connected!");
-    var sql = `insert into registration_ta (name, email, mobile, datetime) values ('${req.body.name}', '${req.body.email}', '${req.body.mobile}', '${cuurent_date}')`;
-    connection.query(sql, function (err, result) {
-      if (err) throw err;
-      console.log("1 record inserted");
-    });
-  });
+  // require("dotenv").config();
+  // const mysql = require("mysql2");
+  // const connection = mysql.createConnection(process.env.DATABASE_URL);
+  // console.log(process.env.DATABASE_URL);
+  // console.log("Connected to PlanetScale!");
+  // connection.connect(function (err) {
+  //   if (err) throw err;
+  //   console.log("Connected!");
+  //   var sql = `insert into registration_ta (name, email, mobile, datetime) values ('${req.body.name}', '${req.body.email}', '${req.body.mobile}', '${cuurent_date}')`;
+  //   connection.query(sql, function (err, result) {
+  //     if (err) throw err;
+  //     console.log("1 record inserted");
+  //   });
+  // });
 
   // console.log(req.body);
 
