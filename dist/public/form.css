@@ -125,10 +125,17 @@ form .button input:hover {
   /* transform: scale(0.99); */
   background: linear-gradient(-135deg, tomato, #71b7e6, #9b59b6, cyan);
 }
+
 @media (max-width: 584px) {
   .container {
     max-width: 100%;
   }
+
+  /* fix the name missing */
+  form .user-details .input-box {
+    margin-top: 20px;
+  }
+
   form .user-details .input-box {
     margin-bottom: 15px;
     width: 100%;
@@ -137,7 +144,7 @@ form .button input:hover {
     width: 100%;
   }
   .content form .user-details {
-    max-height: 300px;
+    max-height: 350px;
     overflow-y: scroll;
   }
   .user-details::-webkit-scrollbar {
