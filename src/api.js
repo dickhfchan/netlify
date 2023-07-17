@@ -3,9 +3,6 @@ const serverless = require("serverless-http");
 
 const bodyParser = require("body-parser");
 
-// app.use(bodyParser.urlencoded({ extended: false }));
-// app.use(bodyParser.json());
-
 // Create an instance of the Express app
 const app = express();
 
@@ -46,7 +43,9 @@ router.post("/form", function (req, res) {
 
 // Use the router to handle requests to the `/.netlify/functions/api` path
 app.use(`/.netlify/functions/api`, router);
-app.use(bodyParser.urlencoded({ extended: true }));
+// app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
 
 // Export the app and the serverless function
 module.exports = app;
