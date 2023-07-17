@@ -1,10 +1,10 @@
 const express = require("express");
 const serverless = require("serverless-http");
 
-var bodyParser = require("body-parser");
+// var bodyParser = require("body-parser");
 
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(bodyParser.json());
+// app.use(bodyParser.urlencoded({ extended: false }));
+// app.use(bodyParser.json());
 
 // Create an instance of the Express app
 const app = express();
@@ -19,12 +19,12 @@ router.get("/", (req, res) => {
   });
 });
 
-router.post("/form", function (req, res) {
-  res.send("Hello World!");
-  // console.log(req.body);
+// router.post("/form", function (req, res) {
+//   res.send("Hello World!");
+//   // console.log(req.body);
 
-  // res.send(req.body);
-});
+//   // res.send(req.body);
+// });
 
 // Use the router to handle requests to the `/.netlify/functions/api` path
 app.use(`/.netlify/functions/api`, router);
